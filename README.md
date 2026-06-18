@@ -271,7 +271,7 @@ def long_prompt(label):    return f"a handwritten digit {['zero','one','two','th
 
 **FID** compares two Gaussians fit to InceptionV3 features (2048-D), $\mathcal{N}(\mu_R, \Sigma_R)$ (real) and $\mathcal{N}(\mu_S, \Sigma_S)$ (generated):
 
-$$\text{FID} = \lVert \mu_S - \mu_R \rVert_2^2 + \operatorname{Tr}\!\left(\Sigma_S + \Sigma_R - 2(\Sigma_S \Sigma_R)^{1/2}\right)$$
+$$\text{FID} = \lVert \mu_S - \mu_R \rVert_2^2 + \mathrm{Tr}\!\left(\Sigma_S + \Sigma_R - 2(\Sigma_S \Sigma_R)^{1/2}\right)$$
 
 **Inception Score** rewards confident, diverse class predictions:
 
